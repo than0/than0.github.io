@@ -54,9 +54,13 @@ span{
     background-color: #8ebf42;
 }
 
-.ffflogo{
+.ffflogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: auto;
-}
+    padding-top: 50px;
+  }
 
 .titlediv{
     height: 10%;
@@ -64,8 +68,9 @@ span{
 
 .titletext{
     text-align: center; 
-    font-size: larger; 
-    font-family: serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+
 }
 
 .content{
