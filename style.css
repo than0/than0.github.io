@@ -1,4 +1,4 @@
-img {
+.marchimg {
     max-width: 100%;
     height: auto;
     display: block;
@@ -16,30 +16,68 @@ img {
 }
 
 body{
-    background-color: #b6e9b3;
+    background-color: #ff3f95;
 }
 
-button{
-    position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgb(219, 174, 24);
-  color: rgb(0, 0, 0);
-  font-size: 32px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 12px;
-}
+
 
 a{
+    display: flex;
+    width: 50%;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
+    text-align: center;
+    line-height: 65px;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(219, 174, 24);
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    
 
+}
+
+span{
+    display: table;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #8ebf42;
+}
+
+.ffflogo{
+    width: auto;
+}
+
+.titlediv{
+    height: 10%;
+}
+
+.titletext{
+    text-align: center; 
+    font-size: larger; 
+    font-family: serif;
+}
+
+.content{
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible{
+    display: block;
+    width: 50%;
+    text-align: center;
+    line-height: 65px;
     text-decoration: none;
     position: relative;
     top: 50%;
