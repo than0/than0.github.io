@@ -12,12 +12,12 @@
     </div>
     <img src="climatestrike.jpg" alt="This is a test image" height="1280" width="962" class = "marchimg">    
     <div class = "container">
-        <button type="button" class="collapsible">Open Collapsible</button>
-        <button type="button" class= "collapsible content">Second Collapsible</button>
-        <img class = "content" src = "OurWrittenSongs.jpg" alt = "Test" height = "1280" width = "962">
-        <a href="https://facebook.com" class="collapsible" ><span style = "text-align: center; background-color: rgb(219, 174, 24);">Song Lyrics!</span></a>
-        <a href="https://google.com" class="collapsible"><span style = "text-align: center; background-color: rgb(219, 174, 24);">Spotify Playlist</span></a>
-        <a href="https://google.com" class="collapsible"><span style = "text-align: center; background-color: rgb(219, 174, 24);">Go to Google</span></a>
+        <button type="button" class="collapsible">Λόγια Τραγουδιών!</button>
+        <button type="button" class= "collapsible content">FFF-Οικόπολις</button>
+        <img class = "songimage content" type = "songimage" src = "OurWrittenSongs.jpg" alt = "Test" height = "700" width = "700">
+        
+        <a href="https://facebook.com" class="collapsible" ><span style = "background-color: rgb(219, 174, 24);">Υπόγραψε την αίτηση!</span></a>
+
 
     </div> 
     <img src="aftokolito.jpg" alt="This is a test image" height="90" width="90" class = "ffflogo"> 
@@ -30,8 +30,9 @@
     for (i = 0; i < coll.length; i++) {
         var content2 = coll[i].nextElementSibling;
         if(content2 != null && content2.classList != null && content2.classList.contains("collapsible")){
-            //console.log(content2.classList);
+            console.log(content2.classList);
             content2.style.display = "none";
+            content2.style.width = "70%";
         }
         coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
