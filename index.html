@@ -7,14 +7,48 @@
     <link rel = "stylesheet" href = "style.css"/>
 </head>
 <body>
-    <p style = "text-align: center; font-size: larger;" ><strong>FRIDAYS FOR FUTURE THESSALONIKI GLOBAL CLIMATE STRIKE</strong></p>
-    <img src="climatestrike.jpg" alt="This is a test image" height="1280" width="962">    
+    <div class = "titlediv"> 
+        <p class = "titletext" ><strong>FRIDAYS FOR FUTURE THESSALONIKI GLOBAL CLIMATE STRIKE</strong></p>
+    </div>
+    <img src="climatestrike.jpg" alt="This is a test image" height="1280" width="962" class = "marchimg">    
     <div class = "container">
-        <a href="https://facebook.com" class="button">Song Lyrics</a>
-        <a href="https://google.com" class="button">Spotify Playlist</a>
-        <a href="https://google.com" class="button">Go to Google</a>
+        <button type="button" class="collapsible">Open Collapsible</button>
+        <button type="button" class= "collapsible content">Second Collapsible</button>
+        <img class = "content" src = "OurWrittenSongs.jpg" alt = "Test" height = "1280" width = "962">
+        <a href="https://facebook.com" class="collapsible" ><span style = "text-align: center; background-color: rgb(219, 174, 24);">Song Lyrics!</span></a>
+        <a href="https://google.com" class="collapsible"><span style = "text-align: center; background-color: rgb(219, 174, 24);">Spotify Playlist</span></a>
+        <a href="https://google.com" class="collapsible"><span style = "text-align: center; background-color: rgb(219, 174, 24);">Go to Google</span></a>
+
     </div> 
+    <img src="aftokolito.jpg" alt="This is a test image" height="90" width="90" class = "ffflogo"> 
     
-    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+    for (i = 0; i < coll.length; i++) {
+        var content2 = coll[i].nextElementSibling;
+        if(content2 != null && content2.classList != null && content2.classList.contains("collapsible")){
+            //console.log(content2.classList);
+            content2.style.display = "none";
+        }
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            if(content.nextElementSibling != null && content.classList.contains("collapsible")){
+                content.nextElementSibling.style.display = "none";
+            }
+        content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+
+
 </body>
+
 </html>
