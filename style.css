@@ -24,10 +24,10 @@ body{
 
 a{
     display: flex;
-    width: 50%;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
+    width: 80%;
     text-align: center;
     line-height: 65px;
     text-decoration: none;
